@@ -33,10 +33,17 @@ public class DanhSachSinhVien implements Interface<Interface> {
         this.danhSach.remove(1);
     }
 
-    //
-//    public void sapXepTenAB(){
-//      Collections.sort(SinhVien) ;
-//    }
+    public void sapXepTuoi(){
+        Collections.sort(danhSach,new Comparator<SinhVien>(){
+
+            @Override
+            public int compare(SinhVien o1, SinhVien o2) {
+                return o1.getNamSinh() - o2.getNamSinh();
+            }
+        });
+
+
+    }
     public void findByName(String name) {
 
     }
@@ -59,12 +66,6 @@ public class DanhSachSinhVien implements Interface<Interface> {
         } else {
            danhSach.remove(viTriSinhVien);
         }
-
-//
-//    @Override
-//    public int compareTo(SinhVien o) {
-//        return 0;
-//    }0
     }
 
     @Override
