@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         QLAccount qla =new QLAccount();
+        String nameTTK ="";
        int choice=1;
        while (choice!=0){
            System.out.println("--------------MENU-----------------");
@@ -43,15 +44,14 @@ public class Main {
            else if(choice==3){
                System.out.println("Nhap ten tai khoan can tim");
                 sc.nextLine();
-               String nameTTK = sc.nextLine();
+                nameTTK = sc.nextLine();
                qla.searchTK(nameTTK);
                System.out.println(qla);
 
            }else if(choice==4){
-
-
+                qla.napTien(nameTTK);
            } else if(choice==5){
-//               System.out.println(qla.rutTien());
+               qla.rutTien(nameTTK);
            }
        }
     }

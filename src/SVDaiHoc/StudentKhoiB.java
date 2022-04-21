@@ -5,7 +5,7 @@ public class StudentKhoiB extends Students{
     public static final String MON_LY = "Ly";
     public static final String MON_HOA = "Hoa";
     public StudentKhoiB(){}
-    public StudentKhoiB(String id, String name, String address, int priority) {
+    public StudentKhoiB(int id, String name, String address, int priority) {
         super(id, name, address, priority);
     }
 

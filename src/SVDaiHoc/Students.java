@@ -1,12 +1,12 @@
 package SVDaiHoc;
 
 public class Students {
-    protected String id;
+    protected int id;
     protected String name;
     protected String address;
     protected int priority;
 
-    public Students(String id, String name, String address, int priority) {
+    public Students(int id, String name, String address, int priority) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -14,11 +14,11 @@ public class Students {
     }
     public Students(){}
 //    get va set
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -46,4 +46,13 @@ public class Students {
         this.priority = priority;
     }
 
+    @Override
+    public String toString() {
+        return "Students{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", priority=" + priority +
+                '}';
+    }
 }

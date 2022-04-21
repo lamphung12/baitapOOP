@@ -48,21 +48,35 @@ public class Account {
                 ", soTienTrongTK=" + soTienTrongTK +
                 '}';
     }
-    Scanner sc =new Scanner(System.in);
-    public double NapTienTK(){
+
+    Scanner sc = new Scanner(System.in);
+
+    public double NapTien() {
         double nap;
         System.out.println("Nhap  so tien bn muon nap");
         nap = sc.nextDouble();
-        if(nap>=0){
-            soTienTrongTK = nap + soTienTrongTK;
-            System.out.println("Ban vua nhap "+ nap+" tien vao tai khoan " );
-        }else{
+        soTienTrongTK = nap + soTienTrongTK;
+        if (nap >= 0) {
+            System.out.println("Ban vua nhap " + nap + " tien vao tai khoan ");
+        } else {
             System.out.println("So tien nhap khong hop le");
         }
-        return nap;
+        return soTienTrongTK;
     }
 
+    public double RutTien1() {
+        double rut;
+        System.out.println("Nhap so tien ban muon rut");
+        rut = sc.nextDouble();
+        double phi = 5;
+        soTienTrongTK = soTienTrongTK - (rut + phi);
+        if (rut <= (soTienTrongTK - phi)) {
+            soTienTrongTK = soTienTrongTK - (rut + phi);
+            System.out.println("So tien ban rut la" + rut );
+        }else{
+            System.out.println("So tien ban rut khong hop le");
+        }
+        return soTienTrongTK;
 
-
+    }
 }
-

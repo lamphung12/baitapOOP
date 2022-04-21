@@ -10,14 +10,14 @@ public class ManageStudent {
   }
   public void display(){
     for (int i = 0; i < studentsArrayList.size() ; i++) {
-      System.out.println(studentsArrayList.get(i));
+      System.out.println(studentsArrayList.get(i).toString());
     }
   }
   public int FindById(int id){
     for (int i = 0; i < studentsArrayList.size() ; i++) {
-//        if(studentsArrayList.get(i).getId() == id){
-//           return i;
-//        }
+        if(studentsArrayList.get(i).getId() == id){
+           return i;
+        }
     }
     return -1;
   }

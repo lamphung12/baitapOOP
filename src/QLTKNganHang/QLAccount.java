@@ -2,6 +2,7 @@ package QLTKNganHang;
 
 import java.util.ArrayList;
 
+
 public class QLAccount {
     ArrayList<Account> accountArrayList = new ArrayList<>();
 
@@ -13,16 +14,7 @@ public class QLAccount {
             System.out.println(accountArrayList.get(i));
         }
     }
-//    public int searchTK(String name) {
-//        for (int i = 0; i < accountArrayList.size(); i++) {
-//            if(accountArrayList.get(i).getTenTK().equals(name)){
-//                return i;
-//            }
-//
-//        }
-//        return -1;
-//
-//    }
+
     public int searchTK(String name) {
         for (int i = 0; i < accountArrayList.size(); i++) {
             if(accountArrayList.get(i).getTenTK().equals(name)){
@@ -31,21 +23,28 @@ public class QLAccount {
         }
         return 0;
     }
+
     public void napTien(String nameTK){
         int TKCanNap = searchTK(nameTK);
         if(TKCanNap == -1){
             System.out.println("Khong co tai khoan nay !");
         }else {
-
-
+       accountArrayList.get(TKCanNap).NapTien();
+            System.out.println("So tien sau khi nap");
+            System.out.println(accountArrayList.get(TKCanNap).getSoTienTrongTK());
         }
     }
-//    public double rutTien(String nameTK){
-//      double TKCanRut = searchTK(nameTK) ;
-//      if(TKCanRut==-1){
-//          System.out.println("");
-//      }
-//        return 0;
-//    }
+    public void rutTien(String nameTK){
+      double TKCanRut = searchTK(nameTK) ;
+      if(TKCanRut==-1){
+          System.out.println("Khong co tai khoan nay");
+      }else{
+          accountArrayList.get((int) TKCanRut).RutTien1();
+          System.out.println("So tien sau khi rut ");
+          System.out.println(accountArrayList.get((int) TKCanRut).getSoTienTrongTK());
+
+      }
+
+    }
 
 }
