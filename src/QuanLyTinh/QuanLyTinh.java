@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class QuanLyTinh implements QuanLy<Tinh> {
     private ArrayList<Tinh> arrayList = new ArrayList<>();
 
+
     public ArrayList<Tinh> getArrayList() {
         return arrayList;
     }
@@ -23,6 +24,8 @@ public class QuanLyTinh implements QuanLy<Tinh> {
 
     @Override
     public void add(Tinh tinh) {
+       arrayList.add(tinh);
+
 
     }
 
@@ -35,12 +38,13 @@ public class QuanLyTinh implements QuanLy<Tinh> {
     public void timTinh(String name ){
         for (int i = 0; i <arrayList.size() ; i++) {
             if(  arrayList.get(i).getName().equals(name)){
-                System.out.println(arrayList.get(i));
+                System.out.println(arrayList.get(i).getDanSo());
             }else{
                 System.out.println("Ko co trong danh sach");
             }
         }
     }
+
 
 
 }
