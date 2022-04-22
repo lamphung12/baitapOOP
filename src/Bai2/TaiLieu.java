@@ -1,12 +1,14 @@
 package Bai2;
 
 public class TaiLieu {
+    private static int autoID =0;
     private int maTaiLieu;
     private String tenNXB;
     private int soBanPhatHanh;
 
-    public TaiLieu(int maTaiLieu, String tenNXB, int soBanPhatHanh) {
-        this.maTaiLieu = maTaiLieu;
+    public TaiLieu( String tenNXB, int soBanPhatHanh) {
+        this.maTaiLieu = autoID;
+        autoID++;
         this.tenNXB = tenNXB;
         this.soBanPhatHanh = soBanPhatHanh;
     }

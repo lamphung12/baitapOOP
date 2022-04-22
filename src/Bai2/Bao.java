@@ -3,8 +3,8 @@ package Bai2;
 public class Bao extends TaiLieu{
     private int ngayPhatHanh;
 
-    public Bao(int maTaiLieu, String tenNXB, int soBanPhatHanh, int ngayPhatHanh) {
-        super(maTaiLieu, tenNXB, soBanPhatHanh);
+    public Bao( String tenNXB, int soBanPhatHanh, int ngayPhatHanh) {
+        super( tenNXB, soBanPhatHanh);
         this.ngayPhatHanh = ngayPhatHanh;
     }
 

@@ -1,13 +1,15 @@
 package SVDaiHoc;
 
 public class Students {
+    public static int autoID=0;
     protected int id;
     protected String name;
     protected String address;
     protected int priority;
 
-    public Students(int id, String name, String address, int priority) {
-        this.id = id;
+    public Students( String name, String address, int priority) {
+        this.id = autoID;
+        autoID++;
         this.name = name;
         this.address = address;
         this.priority = priority;

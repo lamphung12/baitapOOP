@@ -10,16 +10,19 @@ public class ManageStudent {
   }
   public void display(){
     for (int i = 0; i < studentsArrayList.size() ; i++) {
-      System.out.println(studentsArrayList.get(i).toString());
+        System.out.println(studentsArrayList.get(i));
     }
   }
-  public int FindById(int id){
+  public void findById(int id){
     for (int i = 0; i < studentsArrayList.size() ; i++) {
         if(studentsArrayList.get(i).getId() == id){
-           return i;
+            System.out.println(studentsArrayList.get(i));
         }
     }
-    return -1;
+  }
+
+  public void exit(){
+      System.exit(0);
   }
 
 
