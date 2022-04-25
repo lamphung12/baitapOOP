@@ -50,11 +50,11 @@ public class Tinh {
 
     @Override
     public String toString() {
-        return "Tinh{" +
-                "maTinh=" + maTinh +
-                ", name='" + name + '\'' +
-                ", danSo=" + danSo +
-                ", GDP=" + GDP +
-                '}';
+        return 
+                 + maTinh + " , " +
+                 name + " , " +
+                 danSo + " , "+
+                GDP ;
+
     }
 }

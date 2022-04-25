@@ -43,10 +43,10 @@ public class Nguoi extends Tinh {
 
     @Override
     public String toString() {
-        return "Nguoi{" + super.toString()+
-                "ma=" + ma +
-                ", name='" + name + '\'' +
-                ", age=" + age +
+        return "Nguoi{" + super.toString()+"," +
+                 ma + " , "+
+                name + " , " +
+               age + " , " +
                 '}';
     }
 }

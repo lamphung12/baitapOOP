@@ -1,9 +1,9 @@
 package SVDaiHoc;
 
 public class StudentsKhoiA extends Students{
-    public final String MON_TOAN = "Toan";
-    public final String MON_LY = "Ly";
-    public  final String MON_HOA = "Hoa";
+    public static String MON_TOAN = "Toan";
+    public static String MON_LY = "Ly";
+    public static String MON_HOA = "Hoa";
 
     public StudentsKhoiA(){}
     public StudentsKhoiA( String name, String address, int priority) {

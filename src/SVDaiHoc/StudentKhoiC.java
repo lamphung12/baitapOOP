@@ -1,9 +1,9 @@
 package SVDaiHoc;
 
 public class StudentKhoiC extends Students{
-    public  final String MON_VAN = "Van";
-    public  final String MON_SU = "Su";
-    public  final String MON_DIA = "Dia";
+    public  static String MON_VAN = "Van";
+    public  static String MON_SU = "Su";
+    public  static String MON_DIA = "Dia";
     public StudentKhoiC(){}
     public StudentKhoiC( String name, String address, int priority) {
         super( name, address, priority);
